@@ -12,7 +12,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus('sending');
 
-    const key = process.env.REACT_APP_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_ACCESS_KEY';
+    const key = process.env.REACT_APP_WEB3FORMS_KEY || 'd91dd035-4d5d-489c-a2db-f72cfa08af87';
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
@@ -65,7 +65,7 @@ export default function Contact() {
     },
     {
       label: 'Email',
-      href: 'mailto:yourname@email.com',
+      href: 'mailto:anshku.docs@gmail.com',
       icon: (
         <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
