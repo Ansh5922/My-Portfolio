@@ -8,14 +8,40 @@ export default function Contact() {
   const handleChange = (e) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    // Simulated send — wire up to real email service / backend endpoint as needed
-    setTimeout(() => {
-      setStatus('sent');
-      setForm({ name: '', email: '', message: '' });
-    }, 1400);
+
+    const key = process.env.REACT_APP_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_ACCESS_KEY';
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: key,
+          subject: `📩 New Portfolio Message from ${form.name}`,
+          from_name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setStatus('sent');
+        setForm({ name: '', email: '', message: '' });
+      } else {
+        console.error('Web3Forms submission error:', data);
+        setStatus('error');
+      }
+    } catch (err) {
+      console.error('Error submitting message:', err);
+      setStatus('error');
+    }
   };
 
   const socials = [
@@ -128,6 +154,11 @@ export default function Contact() {
 
             {status === 'sent' && (
               <div className="form-success">✅ Message sent! I'll get back to you soon.</div>
+            )}
+            {status === 'error' && (
+              <div className="form-error" style={{ color: '#ff6b6b', marginTop: '1rem' }}>
+                ❌ Failed to send message. Please check your network or try again later.
+              </div>
             )}
 
             <button
