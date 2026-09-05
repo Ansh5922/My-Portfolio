@@ -95,9 +95,9 @@ export default function Hero() {
         {/* Stats */}
         <div className="hero__stats animate-fade-up" style={{ animationDelay: '0.52s' }}>
           {[
-            { value: '18+', label: 'Projects Built' },
-            { value: '6', label: 'Tech Domains' },
-            { value: '5', label: 'Services Offered' },
+            { value: '6', label: 'Featured Projects' },
+            { value: '4', label: 'Tech Domains' },
+            { value: '100%', label: 'Live Demos' },
           ].map((s) => (
             <div key={s.label} className="hero__stat">
               <span className="hero__stat-value">{s.value}</span>
