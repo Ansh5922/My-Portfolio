@@ -2,99 +2,129 @@ import React from 'react';
 import './About.css';
 
 const skills = [
-  { name: 'Data Science & Analytics', level: 90, color: '#2563eb' },
-  { name: 'Machine Learning', level: 88, color: '#0ea5e9' },
-  { name: 'Deep Learning / Neural Networks', level: 82, color: '#4f46e5' },
-  { name: 'Generative AI & LLMs', level: 86, color: '#0d9488' },
-  { name: 'AI Agents & Pipelines', level: 84, color: '#059669' },
-  { name: 'FastAPI Backend', level: 80, color: '#2563eb' },
+  { name: 'Python Development & Core CS', level: 94, color: '#16a34a' },
+  { name: 'Software Engineering & Architecture', level: 90, color: '#0d9488' },
+  { name: 'AI-Enabled Systems & GenAI', level: 88, color: '#0ea5e9' },
+  { name: 'Machine Learning', level: 86, color: '#2563eb' },
+  { name: 'Data Science & Analytics', level: 88, color: '#059669' },
+  { name: 'FastAPI Backend & REST APIs', level: 85, color: '#6366f1' },
 ];
 
 const techStack = [
-  'Python', 'SQL', 'FastAPI', 'LangChain', 'TensorFlow',
-  'PyTorch', 'Scikit-learn', 'Pandas', 'Power BI', 'PostgreSQL',
-  'Gemini API', 'OpenAI', 'FAISS', 'Pydantic',
+  'Python', 'Software Engineering', 'AI-Enabled Systems', 'Machine Learning',
+  'Data Science', 'FastAPI', 'Generative AI', 'AI Agents', 'SQL',
+  'PostgreSQL', 'Scikit-learn', 'TensorFlow', 'Pandas', 'LangChain',
+  'Git & GitHub', 'REST APIs',
 ];
 
-const services = [
+const pillars = [
   {
-    icon: '📊',
-    title: 'Data Science',
-    desc: 'End-to-end data pipelines, EDA, statistical analysis, and storytelling with data.',
+    icon: '💻',
+    title: 'Software Development',
+    desc: 'Designing clean, maintainable software architectures, writing modular code, and building scalable backend systems.',
   },
   {
     icon: '🤖',
+    title: 'AI-Enabled Systems',
+    desc: 'Integrating LLMs, autonomous agents, and intelligent workflows into production applications for next-gen automation.',
+  },
+  {
+    icon: '🐍',
+    title: 'Python Engineering',
+    desc: 'Deep proficiency in Python for data structures, algorithms, asynchronous services, and full-stack AI development.',
+  },
+  {
+    icon: '🧠',
     title: 'Machine Learning',
-    desc: 'Predictive models, classification, regression, clustering — trained and deployed.',
+    desc: 'End-to-end ML lifecycle: data preparation, feature engineering, predictive modeling, evaluation, and deployment.',
   },
   {
-    icon: '✨',
-    title: 'Generative AI',
-    desc: 'RAG pipelines, document Q&A, LLM fine-tuning and integration using Gemini / OpenAI.',
-  },
-  {
-    icon: '🧩',
-    title: 'AI Agents',
-    desc: 'Autonomous agents with tool use, memory, and multi-step reasoning capabilities.',
+    icon: '📊',
+    title: 'Data Science & Analytics',
+    desc: 'Extracting actionable intelligence through exploratory data analysis, statistical modeling, and visual storytelling.',
   },
   {
     icon: '⚡',
-    title: 'FastAPI Backend',
-    desc: 'Production-grade REST APIs with auth, RBAC, async support, and DB integration.',
-  },
-  {
-    icon: '🗄️',
-    title: 'SQL & BI',
-    desc: 'Complex SQL queries, data warehousing, Power BI dashboards, and Excel automation.',
+    title: 'FastAPI & Backend APIs',
+    desc: 'Building high-throughput asynchronous REST APIs with Pydantic schemas, secure authentication, and database integration.',
   },
 ];
 
 export default function About() {
   return (
     <section id="about" className="about">
+      <span id="skills" style={{ display: 'block', position: 'relative', top: '-80px', visibility: 'hidden' }} />
       <div className="container">
 
         {/* Header */}
         <div className="about__header">
           <p className="about__eyebrow">About Me</p>
           <h2 className="section-heading">
-            Who I Am &amp; <span className="gradient-text">What I Do</span>
+            Engineering Scalable Software &amp; <span className="gradient-text">AI-Enabled Systems</span>
           </h2>
           <div className="section-divider" />
           <p className="section-sub">
-            I'm <strong>Ansh</strong> — a data &amp; AI enthusiast who builds intelligent, 
-            production-ready systems at the intersection of machine learning, generative AI, and backend engineering.
+            I am an <strong>Aspiring Software Developer</strong> passionate about building intelligent, production-ready 
+            software at the convergence of software engineering, <strong>Python</strong>, <strong>Machine Learning</strong>, 
+            and <strong>Data Science</strong>.
           </p>
         </div>
 
-        {/* Bio + skills */}
+        {/* Bio + Skills Grid */}
         <div className="about__grid">
+          
+          {/* Bio Card */}
           <div className="about__bio glass-card">
-            <div className="about__avatar">A</div>
-            <h3>Hi, I'm Ansh</h3>
+            <div className="about__bio-top">
+              <div className="about__avatar">A</div>
+              <div className="about__status-pill">
+                <span className="status-dot" />
+                Aspiring Software Developer
+              </div>
+            </div>
+
+            <h3 className="about__bio-heading">Hi, I'm Ansh Kumar</h3>
+            
             <p>
-              I'm passionate about everything at the intersection of <strong>data</strong> and <strong>intelligence</strong>.
-              Whether it's building ML models from scratch, creating GenAI pipelines, training neural networks,
-              or shipping scalable FastAPI backends — I love working across the full AI stack.
+              I am an <strong>Aspiring Software Developer</strong> with a passionate drive to build 
+              <strong> AI-enabled systems</strong> that turn cutting-edge intelligence into practical, 
+              scalable, and intuitive software applications.
             </p>
+            
             <p>
-              My work spans <strong>Data Science</strong>, <strong>ML Engineering</strong>,
-              <strong> Generative AI</strong>, <strong>AI Agents</strong>, <strong>FastAPI</strong>,
-              and <strong>SQL/BI</strong>. I believe in learning by building and shipping real projects
-              that solve real problems.
+              My core technical foundation is deeply rooted in <strong>Python</strong>, reinforced with robust 
+              skills across <strong>Machine Learning</strong>, <strong>Data Science</strong>, 
+              <strong> Generative AI</strong>, and high-performance backend frameworks like <strong>FastAPI</strong>. 
+              I believe great AI solutions require equally strong software engineering fundamentals — from clean, 
+              modular code to reliable database schemas and high-throughput APIs.
             </p>
+
+            <p>
+              Whether it involves architecting automated data pipelines, developing autonomous AI agents, 
+              or shipping end-to-end full stack software, I am dedicated to continuous learning and crafting 
+              systems that create tangible real-world value.
+            </p>
+
+            <div className="about__tags-header">Core Competencies &amp; Toolkit:</div>
             <div className="about__tags">
-              {techStack.map((t) => <span key={t} className="tag">{t}</span>)}
+              {techStack.map((t) => (
+                <span key={t} className="tag">{t}</span>
+              ))}
             </div>
           </div>
 
+          {/* Technical Proficiency Panel */}
           <div className="about__skills-panel glass-card">
-            <h3>Technical Proficiency</h3>
+            <div className="about__panel-header">
+              <h3>Technical Strengths</h3>
+              <span className="about__panel-sub">Continuous growth &amp; hands-on building</span>
+            </div>
+
             <div className="skill-bars">
               {skills.map((skill, i) => (
                 <div key={skill.name} className="skill-bar" style={{ animationDelay: `${i * 0.08}s` }}>
                   <div className="skill-bar__header">
-                    <span>{skill.name}</span>
+                    <span className="skill-bar__name">{skill.name}</span>
                     <span className="skill-bar__pct" style={{ color: skill.color }}>{skill.level}%</span>
                   </div>
                   <div className="skill-bar__track">
@@ -106,21 +136,29 @@ export default function About() {
                 </div>
               ))}
             </div>
+
+            <div className="about__panel-quote">
+              <span className="quote-icon">💡</span>
+              <p>
+                "Committed to writing clean code, architecting maintainable software systems, and leveraging data &amp; AI to solve high-impact problems."
+              </p>
+            </div>
           </div>
+
         </div>
 
-        {/* Services grid */}
+        {/* Pillars / Services Grid */}
         <div className="about__services-header">
-          <p className="about__eyebrow">What I Offer</p>
-          <h3 className="about__services-title">Services</h3>
+          <p className="about__eyebrow">What I Bring To The Table</p>
+          <h3 className="about__services-title">Core Disciplines &amp; Specializations</h3>
         </div>
 
         <div className="about__services">
-          {services.map((s) => (
-            <div key={s.title} className="service-card glass-card">
-              <span className="service-card__icon">{s.icon}</span>
-              <h4 className="service-card__title">{s.title}</h4>
-              <p className="service-card__desc">{s.desc}</p>
+          {pillars.map((p) => (
+            <div key={p.title} className="service-card glass-card">
+              <span className="service-card__icon">{p.icon}</span>
+              <h4 className="service-card__title">{p.title}</h4>
+              <p className="service-card__desc">{p.desc}</p>
             </div>
           ))}
         </div>

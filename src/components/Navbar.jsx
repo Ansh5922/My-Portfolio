@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import SkillsModal from './SkillsModal';
 import './Navbar.css';
 
 const navLinks = [
@@ -12,6 +13,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [skillsModalOpen, setSkillsModalOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -36,27 +38,40 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
-      <div className="container navbar__inner">
-        <a href="#home" className="navbar__logo">
-          <span className="logo-bracket">&lt;</span>
-          <span className="logo-name">Portfolio</span>
-          <span className="logo-bracket">/&gt;</span>
-        </a>
+    <>
+      <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
+        <div className="container navbar__inner">
+          <a href="#home" className="navbar__logo">
+            <span className="logo-name">Ansh Kumar</span>
+          </a>
 
-        <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className={`navbar__link ${activeSection === link.href.slice(1) ? 'navbar__link--active' : ''}`}
-                onClick={() => setMenuOpen(false)}
+          <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={`navbar__link ${activeSection === link.href.slice(1) ? 'navbar__link--active' : ''}`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+            <li>
+              <button
+                type="button"
+                className="navbar__skills-btn"
+                onClick={() => {
+                  setSkillsModalOpen(true);
+                  setMenuOpen(false);
+                }}
+                title="View All Skills"
               >
-                {link.label}
-              </a>
+                <span className="skills-btn-icon">⚡</span>
+                Skills
+              </button>
             </li>
-          ))}
-        </ul>
+          </ul>
 
         <button
           className={`navbar__hamburger ${menuOpen ? 'navbar__hamburger--open' : ''}`}
@@ -67,5 +82,11 @@ export default function Navbar() {
         </button>
       </div>
     </nav>
+
+    <SkillsModal
+      isOpen={skillsModalOpen}
+      onClose={() => setSkillsModalOpen(false)}
+    />
+  </>
   );
 }

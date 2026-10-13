@@ -34,14 +34,17 @@
 }
 
 .logo-bracket {
-  color: var(--accent-blue);
+  color: #16a34a;
 }
 
 .logo-name {
-  background: var(--grad-primary);
+  background: linear-gradient(135deg, #16a34a, #0d9488);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 .navbar__logo:hover { opacity: 0.75; }
@@ -69,19 +72,74 @@
   position: absolute;
   bottom: 0; left: 0;
   width: 0; height: 2px;
-  background: var(--accent-blue);
+  background: #16a34a;
   border-radius: 2px;
   transition: width 0.25s ease;
 }
 
 .navbar__link:hover,
 .navbar__link--active {
-  color: var(--accent-blue);
+  color: #16a34a;
 }
 
 .navbar__link:hover::after,
 .navbar__link--active::after {
   width: 100%;
+}
+
+/* Skills button */
+.navbar__skills-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 22px;
+  background: linear-gradient(135deg, rgba(22, 163, 74, 0.08), rgba(13, 148, 136, 0.1));
+  border: 1.5px solid #16a34a;
+  border-radius: 50px;
+  color: #16a34a;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  letter-spacing: 0.02em;
+}
+
+.skills-btn-icon {
+  font-size: 0.95rem;
+  transition: transform 0.2s ease;
+}
+
+.navbar__skills-btn:hover {
+  background: linear-gradient(135deg, #16a34a, #0d9488);
+  border-color: transparent;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(22, 163, 74, 0.35);
+}
+
+.navbar__skills-btn:hover .skills-btn-icon {
+  transform: scale(1.2);
+}
+
+/* Legacy Resume button (fallback) */
+.navbar__resume-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 2px solid #16a34a;
+  border-radius: 50px;
+  color: #16a34a;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  letter-spacing: 0.02em;
+}
+
+.navbar__resume-btn:hover {
+  background: #16a34a;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.3);
 }
 
 /* Hamburger */
