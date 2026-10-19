@@ -21,32 +21,32 @@ const pillars = [
   {
     icon: '💻',
     title: 'Software Development',
-    desc: 'Designing clean, maintainable software architectures, writing modular code, and building scalable backend systems.',
+    desc: 'Clean code. Scalable architecture. Systems that last.',
   },
   {
     icon: '🤖',
     title: 'AI-Enabled Systems',
-    desc: 'Integrating LLMs, autonomous agents, and intelligent workflows into production applications for next-gen automation.',
+    desc: 'LLMs, agents & workflows — wired into real products.',
   },
   {
     icon: '🐍',
     title: 'Python Engineering',
-    desc: 'Deep proficiency in Python for data structures, algorithms, asynchronous services, and full-stack AI development.',
+    desc: 'From algorithms to async APIs — Python is my language.',
   },
   {
     icon: '🧠',
     title: 'Machine Learning',
-    desc: 'End-to-end ML lifecycle: data preparation, feature engineering, predictive modeling, evaluation, and deployment.',
+    desc: 'Data in, insight out. End-to-end ML that ships.',
   },
   {
     icon: '📊',
     title: 'Data Science & Analytics',
-    desc: 'Extracting actionable intelligence through exploratory data analysis, statistical modeling, and visual storytelling.',
+    desc: 'Raw data to decisions — no guessing, all signal.',
   },
   {
     icon: '⚡',
     title: 'FastAPI & Backend APIs',
-    desc: 'Building high-throughput asynchronous REST APIs with Pydantic schemas, secure authentication, and database integration.',
+    desc: 'High-throughput REST APIs built to handle the load.',
   },
 ];
 
@@ -60,13 +60,11 @@ export default function About() {
         <div className="about__header">
           <p className="about__eyebrow">About Me</p>
           <h2 className="section-heading">
-            Engineering Scalable Software &amp; <span className="gradient-text">AI-Enabled Systems</span>
+            Code with purpose. <span className="gradient-text">AI with intention.</span>
           </h2>
           <div className="section-divider" />
           <p className="section-sub">
-            I am an <strong>Aspiring Software Developer</strong> passionate about building intelligent, production-ready 
-            software at the convergence of software engineering, <strong>Python</strong>, <strong>Machine Learning</strong>, 
-            and <strong>Data Science</strong>.
+            Aspiring software developer at the intersection of Python, Machine Learning, and AI-enabled systems.
           </p>
         </div>
 
@@ -86,23 +84,15 @@ export default function About() {
             <h3 className="about__bio-heading">Hi, I'm Ansh Kumar</h3>
             
             <p>
-              I am an <strong>Aspiring Software Developer</strong> with a passionate drive to build 
-              <strong> AI-enabled systems</strong> that turn cutting-edge intelligence into practical, 
-              scalable, and intuitive software applications.
+              I don't just write code — I <strong>engineer intelligence</strong>. From autonomous AI agents to 
+              high-throughput APIs, I build software that solves real problems at the intersection of 
+              <strong> Python</strong>, <strong>ML</strong>, and <strong>GenAI</strong>.
             </p>
             
             <p>
-              My core technical foundation is deeply rooted in <strong>Python</strong>, reinforced with robust 
-              skills across <strong>Machine Learning</strong>, <strong>Data Science</strong>, 
-              <strong> Generative AI</strong>, and high-performance backend frameworks like <strong>FastAPI</strong>. 
-              I believe great AI solutions require equally strong software engineering fundamentals — from clean, 
-              modular code to reliable database schemas and high-throughput APIs.
-            </p>
-
-            <p>
-              Whether it involves architecting automated data pipelines, developing autonomous AI agents, 
-              or shipping end-to-end full stack software, I am dedicated to continuous learning and crafting 
-              systems that create tangible real-world value.
+              My toolkit: <strong>FastAPI</strong> for blazing backends, <strong>Scikit-learn</strong> for 
+              predictive models, <strong>LangChain</strong> for AI pipelines — and a bias toward 
+              shipping things that <em>actually work</em>.
             </p>
 
             <div className="about__tags-header">Core Competencies &amp; Toolkit:</div>
