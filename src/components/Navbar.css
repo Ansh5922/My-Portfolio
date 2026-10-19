@@ -7,12 +7,12 @@
 }
 
 .navbar--scrolled {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   padding: 14px 0;
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 12px rgba(234, 88, 12, 0.05);
 }
 
 .navbar__inner {
@@ -34,11 +34,11 @@
 }
 
 .logo-bracket {
-  color: #16a34a;
+  color: #ea580c;
 }
 
 .logo-name {
-  background: linear-gradient(135deg, #16a34a, #0d9488);
+  background: linear-gradient(135deg, #f97316, #ea580c);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -47,7 +47,7 @@
   letter-spacing: -0.01em;
 }
 
-.navbar__logo:hover { opacity: 0.75; }
+.navbar__logo:hover { opacity: 0.8; }
 
 .navbar__links {
   display: flex;
@@ -72,14 +72,14 @@
   position: absolute;
   bottom: 0; left: 0;
   width: 0; height: 2px;
-  background: #16a34a;
+  background: #ea580c;
   border-radius: 2px;
   transition: width 0.25s ease;
 }
 
 .navbar__link:hover,
 .navbar__link--active {
-  color: #16a34a;
+  color: #ea580c;
 }
 
 .navbar__link:hover::after,
@@ -93,10 +93,10 @@
   align-items: center;
   gap: 6px;
   padding: 8px 22px;
-  background: linear-gradient(135deg, rgba(22, 163, 74, 0.08), rgba(13, 148, 136, 0.1));
-  border: 1.5px solid #16a34a;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.08), rgba(234, 88, 12, 0.12));
+  border: 1.5px solid #ea580c;
   border-radius: 50px;
-  color: #16a34a;
+  color: #ea580c;
   font-size: 0.86rem;
   font-weight: 700;
   cursor: pointer;
@@ -110,11 +110,11 @@
 }
 
 .navbar__skills-btn:hover {
-  background: linear-gradient(135deg, #16a34a, #0d9488);
+  background: linear-gradient(135deg, #f97316, #ea580c);
   border-color: transparent;
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(22, 163, 74, 0.35);
+  box-shadow: 0 4px 16px rgba(234, 88, 12, 0.35);
 }
 
 .navbar__skills-btn:hover .skills-btn-icon {
@@ -125,9 +125,9 @@
 .navbar__resume-btn {
   display: inline-block;
   padding: 8px 20px;
-  border: 2px solid #16a34a;
+  border: 2px solid #ea580c;
   border-radius: 50px;
-  color: #16a34a;
+  color: #ea580c;
   font-size: 0.85rem;
   font-weight: 700;
   text-decoration: none;
@@ -136,10 +136,10 @@
 }
 
 .navbar__resume-btn:hover {
-  background: #16a34a;
+  background: #ea580c;
   color: white;
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.3);
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.3);
 }
 
 /* Hamburger */
@@ -186,7 +186,7 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.25s ease;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.08);
   }
 
   .navbar__links--open {

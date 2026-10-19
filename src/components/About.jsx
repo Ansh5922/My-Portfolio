@@ -2,12 +2,12 @@ import React from 'react';
 import './About.css';
 
 const skills = [
-  { name: 'Python Development & Core CS', level: 94, color: '#16a34a' },
-  { name: 'Software Engineering & Architecture', level: 90, color: '#0d9488' },
-  { name: 'AI-Enabled Systems & GenAI', level: 88, color: '#0ea5e9' },
-  { name: 'Machine Learning', level: 86, color: '#2563eb' },
-  { name: 'Data Science & Analytics', level: 88, color: '#059669' },
-  { name: 'FastAPI Backend & REST APIs', level: 85, color: '#6366f1' },
+  { name: 'Python Development & Core CS', level: 94, color: '#ea580c' },
+  { name: 'Software Engineering & Architecture', level: 90, color: '#f97316' },
+  { name: 'AI-Enabled Systems & GenAI', level: 88, color: '#f59e0b' },
+  { name: 'Machine Learning', level: 86, color: '#d97706' },
+  { name: 'Data Science & Analytics', level: 88, color: '#c2410c' },
+  { name: 'FastAPI Backend & REST APIs', level: 85, color: '#ea580c' },
 ];
 
 const techStack = [

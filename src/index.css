@@ -1,32 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap');
 
-/* ─── CSS Variables — Minimalist White & Blue ─── */
+/* ─── CSS Variables — Sophisticated Warm Orange & Crisp White ─── */
 :root {
   /* Backgrounds */
   --bg-primary: #ffffff;
-  --bg-secondary: #f7f9fc;
+  --bg-secondary: #faf8f5;
   --bg-card: #ffffff;
-  --bg-card-hover: #f0f6ff;
-  --border: #e2e8f0;
-  --border-hover: #93c5fd;
+  --bg-card-hover: #fffaf3;
+  --border: #f3ede4;
+  --border-hover: #fed7aa;
 
-  /* Blue Accent Palette */
-  --accent-blue: #2563eb;
-  --accent-blue-light: #3b82f6;
-  --accent-blue-pale: #dbeafe;
-  --accent-sky: #0ea5e9;
-  --accent-indigo: #4f46e5;
-  --accent-green: #059669;
-  --accent-orange: #d97706;
-  --accent-red: #dc2626;
-  --accent-teal: #0d9488;
+  /* Orange & Warm Accent Palette */
+  --accent-orange: #ea580c;       /* Rich Sunset Orange - Primary Brand */
+  --accent-orange-light: #f97316; /* Vibrant Orange */
+  --accent-orange-pale: #fff7ed;  /* Soft Warm White/Orange Tint */
+  --accent-orange-tint: #ffedd5;  /* Subtle Amber/Orange Border */
+  --accent-amber: #f59e0b;        /* Luminous Golden Amber */
+  --accent-amber-dark: #d97706;   /* Deep Amber */
+  --accent-burnt: #c2410c;        /* Deep Burnt Orange */
+  --accent-rust: #9a3412;         /* Dark Contrast Orange */
+
+  /* Neutral Accents */
+  --accent-blue: #ea580c;         /* Unified to brand orange */
+  --accent-blue-light: #f97316;
+  --accent-blue-pale: #fff7ed;
+  --accent-sky: #f59e0b;
+  --accent-indigo: #ea580c;
+  --accent-green: #f97316;
+  --accent-red: #e11d48;
+  --accent-teal: #f59e0b;
 
   /* Gradients */
-  --grad-primary: linear-gradient(135deg, #16a34a 0%, #0d9488 100%);
-  --grad-blue-soft: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
-  --grad-hero: linear-gradient(160deg, #f0faf4 0%, #ffffff 50%, #e8f4f8 100%);
-  --accent-green-dark: #15803d;
-  --accent-green-light: #4ade80;
+  --grad-primary: linear-gradient(135deg, #f97316 0%, #ea580c 50%, #f59e0b 100%);
+  --grad-orange-soft: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  --grad-hero: linear-gradient(160deg, #fff9f2 0%, #ffffff 50%, #fff4e8 100%);
+  --accent-orange-dark: #c2410c;
 
   /* Text */
   --text-primary: #0f172a;
@@ -41,9 +49,9 @@
   --radius-lg: 16px;
   --radius-xl: 24px;
 
-  --shadow-glow: 0 0 0 3px rgba(37, 99, 235, 0.15), 0 8px 32px rgba(37, 99, 235, 0.12);
-  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.06);
-  --shadow-card-hover: 0 4px 20px rgba(37, 99, 235, 0.12), 0 1px 4px rgba(0,0,0,0.06);
+  --shadow-glow: 0 0 0 3px rgba(234, 88, 12, 0.15), 0 8px 32px rgba(234, 88, 12, 0.15);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(234, 88, 12, 0.04);
+  --shadow-card-hover: 0 6px 24px rgba(234, 88, 12, 0.12), 0 1px 4px rgba(0, 0, 0, 0.05);
   --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -67,9 +75,10 @@ body {
 }
 
 /* ─── Scrollbar ─── */
-::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-secondary); }
-::-webkit-scrollbar-thumb { background: var(--accent-blue-light); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #fdba74; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #f97316; }
 
 /* ─── Utility ─── */
 .container {
@@ -106,40 +115,40 @@ body::before {
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(37,99,235,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37,99,235,0.025) 1px, transparent 1px);
+    linear-gradient(rgba(234, 88, 12, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(234, 88, 12, 0.025) 1px, transparent 1px);
   background-size: 48px 48px;
   pointer-events: none;
   z-index: 0;
 }
 
-/* ─── Soft blue decorative blobs (very subtle) ─── */
+/* ─── Warm orange decorative blobs ─── */
 .bg-blob {
   position: fixed;
   border-radius: 50%;
   filter: blur(120px);
-  opacity: 0.06;
+  opacity: 0.08;
   pointer-events: none;
   z-index: 0;
 }
 
 .bg-blob-1 {
   width: 700px; height: 700px;
-  background: #16a34a;
+  background: #f97316;
   top: -250px; left: -200px;
   animation: drift1 20s ease-in-out infinite alternate;
 }
 
 .bg-blob-2 {
   width: 600px; height: 600px;
-  background: #0d9488;
+  background: #ea580c;
   bottom: -200px; right: -200px;
   animation: drift2 25s ease-in-out infinite alternate;
 }
 
 .bg-blob-3 {
-  width: 400px; height: 400px;
-  background: #2563eb;
+  width: 450px; height: 450px;
+  background: #f59e0b;
   top: 45%; left: 55%;
   animation: drift3 18s ease-in-out infinite alternate;
 }
@@ -193,24 +202,25 @@ body::before {
 .btn-primary {
   background: var(--grad-primary);
   color: white;
-  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.3);
+  box-shadow: 0 3px 12px rgba(234, 88, 12, 0.3);
 }
 
 .btn-primary:hover {
-  filter: brightness(1.08);
+  filter: brightness(1.06);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+  box-shadow: 0 6px 22px rgba(234, 88, 12, 0.42);
 }
 
 .btn-outline {
   background: white;
-  color: var(--accent-blue);
-  border: 1.5px solid var(--accent-blue);
+  color: var(--accent-orange);
+  border: 1.5px solid var(--accent-orange);
 }
 
 .btn-outline:hover {
-  background: var(--accent-blue-pale);
-  border-color: var(--accent-blue);
+  background: var(--accent-orange-pale);
+  border-color: var(--accent-burnt);
+  color: var(--accent-burnt);
 }
 
 /* ─── Tags ─── */
@@ -222,14 +232,15 @@ body::before {
   font-size: 0.72rem;
   font-weight: 600;
   font-family: var(--font-mono);
-  background: var(--accent-blue-pale);
-  color: var(--accent-blue);
-  border: 1px solid #bfdbfe;
+  background: var(--accent-orange-pale);
+  color: var(--accent-burnt);
+  border: 1px solid var(--accent-orange-tint);
   transition: var(--transition);
 }
 
 .tag:hover {
-  background: #bfdbfe;
+  background: var(--accent-orange-tint);
+  border-color: var(--accent-orange);
 }
 
 /* ─── Divider line ─── */
@@ -250,9 +261,9 @@ body::before {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-@keyframes pulse-blue {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.3); }
-  50%       { box-shadow: 0 0 0 6px rgba(37, 99, 235, 0); }
+@keyframes pulse-orange {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.35); }
+  50%       { box-shadow: 0 0 0 7px rgba(234, 88, 12, 0); }
 }
 @keyframes spin {
   from { transform: rotate(0deg); }
@@ -274,7 +285,7 @@ body::before {
 .spinner {
   width: 36px; height: 36px;
   border: 3px solid var(--border);
-  border-top-color: var(--accent-blue);
+  border-top-color: var(--accent-orange);
   border-radius: 50%;
   animation: spin 0.7s linear infinite;
 }

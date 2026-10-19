@@ -1,5 +1,6 @@
 /* ═══════════════════════════════════════════════════════
    ABOUT SECTION — Refined, Modern & Impactful
+   Warm Orange & Crisp White Theme
    ═══════════════════════════════════════════════════════ */
 
 .about {
@@ -20,7 +21,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #16a34a;
+  color: #ea580c;
   margin-bottom: 10px;
 }
 
@@ -64,14 +65,14 @@
   width: 58px;
   height: 58px;
   border-radius: 16px;
-  background: linear-gradient(135deg, #16a34a, #0d9488);
+  background: linear-gradient(135deg, #f97316, #ea580c);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   font-weight: 800;
   color: white;
-  box-shadow: 0 6px 18px rgba(22, 163, 74, 0.3);
+  box-shadow: 0 6px 18px rgba(234, 88, 12, 0.3);
 }
 
 .about__status-pill {
@@ -79,20 +80,20 @@
   align-items: center;
   gap: 8px;
   padding: 6px 14px;
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
   border-radius: 50px;
   font-size: 0.78rem;
   font-weight: 700;
-  color: #15803d;
+  color: #c2410c;
 }
 
 .status-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #22c55e;
-  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
+  background: #ea580c;
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.25);
   animation: pulse-dot 2s infinite;
 }
 
@@ -138,9 +139,9 @@
 }
 
 .about__tags .tag {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  color: #334155;
+  background: #ffffff;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
   font-size: 0.78rem;
   font-weight: 600;
   padding: 5px 12px;
@@ -149,9 +150,9 @@
 }
 
 .about__tags .tag:hover {
-  background: #f0fdf4;
-  border-color: #86efac;
-  color: #15803d;
+  background: #fff7ed;
+  border-color: #ea580c;
+  color: #c2410c;
   transform: translateY(-1px);
 }
 
@@ -240,8 +241,8 @@
 .about__panel-quote {
   margin-top: 24px;
   padding: 16px 20px;
-  background: #f8fafc;
-  border-left: 3px solid #16a34a;
+  background: #fffaf5;
+  border-left: 3px solid #ea580c;
   border-radius: 0 12px 12px 0;
   display: flex;
   align-items: flex-start;
@@ -285,7 +286,7 @@
   padding: 30px;
   border-radius: 18px;
   background: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border);
   transition: all 0.25s ease;
   cursor: default;
   display: flex;
@@ -293,10 +294,10 @@
 }
 
 .service-card:hover {
-  border-color: #86efac;
+  border-color: #fdba74;
   background: #ffffff;
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.12);
+  box-shadow: 0 12px 28px rgba(234, 88, 12, 0.12);
 }
 
 .service-card__icon {
@@ -306,10 +307,10 @@
   justify-content: center;
   width: 52px;
   height: 52px;
-  background: #f0fdf4;
+  background: #fff7ed;
   border-radius: 14px;
   margin-bottom: 18px;
-  border: 1px solid #dcfce7;
+  border: 1px solid #fed7aa;
 }
 
 .service-card__title {
