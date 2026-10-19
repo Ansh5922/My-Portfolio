@@ -92,15 +92,6 @@ export default function Hero() {
               className="hero__photo"
             />
           </div>
-          {/* Floating skill badge */}
-          <div className="hero__float-badge hero__float-badge--tl">
-            <span className="hero__float-icon">💻</span>
-            <span>Software Engineer</span>
-          </div>
-          <div className="hero__float-badge hero__float-badge--br">
-            <span className="hero__float-icon">🤖</span>
-            <span>AI-Enabled Systems</span>
-          </div>
         </div>
       </div>
 
