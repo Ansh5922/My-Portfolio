@@ -41,8 +41,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="hero__desc animate-fade-up" style={{ animationDelay: '0.28s' }}>
-            Passionate about building intelligent, AI-enabled software systems and high-performance applications.
-            Skilled in Python, Machine Learning, Data Science, and modern backend architectures.
+            I build systems that think. Software that ships. AI that actually works.
           </p>
 
           {/* Service chips */}
