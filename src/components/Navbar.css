@@ -7,12 +7,12 @@
 }
 
 .navbar--scrolled {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.93);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   padding: 14px 0;
-  box-shadow: 0 1px 12px rgba(234, 88, 12, 0.05);
+  box-shadow: 0 1px 12px rgba(245, 158, 11, 0.06);
 }
 
 .navbar__inner {
@@ -34,11 +34,11 @@
 }
 
 .logo-bracket {
-  color: #ea580c;
+  color: #f59e0b;
 }
 
 .logo-name {
-  background: linear-gradient(135deg, #f97316, #ea580c);
+  background: linear-gradient(135deg, #facc15, #f59e0b);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -72,14 +72,14 @@
   position: absolute;
   bottom: 0; left: 0;
   width: 0; height: 2px;
-  background: #ea580c;
+  background: #f59e0b;
   border-radius: 2px;
   transition: width 0.25s ease;
 }
 
 .navbar__link:hover,
 .navbar__link--active {
-  color: #ea580c;
+  color: #d97706;
 }
 
 .navbar__link:hover::after,
@@ -93,10 +93,10 @@
   align-items: center;
   gap: 6px;
   padding: 8px 22px;
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.08), rgba(234, 88, 12, 0.12));
-  border: 1.5px solid #ea580c;
+  background: linear-gradient(135deg, rgba(250, 204, 21, 0.12), rgba(245, 158, 11, 0.15));
+  border: 1.5px solid #f59e0b;
   border-radius: 50px;
-  color: #ea580c;
+  color: #b45309;
   font-size: 0.86rem;
   font-weight: 700;
   cursor: pointer;
@@ -110,11 +110,11 @@
 }
 
 .navbar__skills-btn:hover {
-  background: linear-gradient(135deg, #f97316, #ea580c);
+  background: linear-gradient(135deg, #facc15, #f59e0b);
   border-color: transparent;
-  color: #ffffff;
+  color: #78350f;
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(234, 88, 12, 0.35);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.38);
 }
 
 .navbar__skills-btn:hover .skills-btn-icon {
@@ -125,9 +125,9 @@
 .navbar__resume-btn {
   display: inline-block;
   padding: 8px 20px;
-  border: 2px solid #ea580c;
+  border: 2px solid #f59e0b;
   border-radius: 50px;
-  color: #ea580c;
+  color: #b45309;
   font-size: 0.85rem;
   font-weight: 700;
   text-decoration: none;
@@ -136,10 +136,10 @@
 }
 
 .navbar__resume-btn:hover {
-  background: #ea580c;
-  color: white;
+  background: #f59e0b;
+  color: #78350f;
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.3);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
 }
 
 /* Hamburger */
@@ -186,7 +186,7 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.25s ease;
-    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.08);
+    box-shadow: 0 8px 24px rgba(245, 158, 11, 0.1);
   }
 
   .navbar__links--open {

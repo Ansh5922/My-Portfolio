@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════
    ABOUT SECTION — Refined, Modern & Impactful
-   Warm Orange & Crisp White Theme
+   Mango Gold & Sunflower Palette (Option 3)
    ═══════════════════════════════════════════════════════ */
 
 .about {
@@ -21,7 +21,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: #ea580c;
+  color: #d97706;
   margin-bottom: 10px;
 }
 
@@ -65,14 +65,14 @@
   width: 58px;
   height: 58px;
   border-radius: 16px;
-  background: linear-gradient(135deg, #f97316, #ea580c);
+  background: linear-gradient(135deg, #facc15, #f59e0b);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   font-weight: 800;
-  color: white;
-  box-shadow: 0 6px 18px rgba(234, 88, 12, 0.3);
+  color: #78350f;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.3);
 }
 
 .about__status-pill {
@@ -80,20 +80,20 @@
   align-items: center;
   gap: 8px;
   padding: 6px 14px;
-  background: #fff7ed;
-  border: 1px solid #fed7aa;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
   border-radius: 50px;
   font-size: 0.78rem;
   font-weight: 700;
-  color: #c2410c;
+  color: #92400e;
 }
 
 .status-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #ea580c;
-  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.25);
+  background: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.25);
   animation: pulse-dot 2s infinite;
 }
 
@@ -140,19 +140,19 @@
 
 .about__tags .tag {
   background: #ffffff;
-  border: 1px solid #fed7aa;
-  color: #9a3412;
+  border: 1px solid #fde68a;
+  color: #78350f;
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 5px 12px;
   border-radius: 8px;
   transition: all 0.2s ease;
 }
 
 .about__tags .tag:hover {
-  background: #fff7ed;
-  border-color: #ea580c;
-  color: #c2410c;
+  background: #fffbeb;
+  border-color: #f59e0b;
+  color: #92400e;
   transform: translateY(-1px);
 }
 
@@ -233,7 +233,7 @@
   top: 0;
   width: 12px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.55);
   border-radius: 100px;
   filter: blur(1px);
 }
@@ -241,8 +241,8 @@
 .about__panel-quote {
   margin-top: 24px;
   padding: 16px 20px;
-  background: #fffaf5;
-  border-left: 3px solid #ea580c;
+  background: #fffdf7;
+  border-left: 3px solid #f59e0b;
   border-radius: 0 12px 12px 0;
   display: flex;
   align-items: flex-start;
@@ -294,10 +294,10 @@
 }
 
 .service-card:hover {
-  border-color: #fdba74;
+  border-color: #fde68a;
   background: #ffffff;
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(234, 88, 12, 0.12);
+  box-shadow: 0 12px 28px rgba(245, 158, 11, 0.12);
 }
 
 .service-card__icon {
@@ -307,10 +307,10 @@
   justify-content: center;
   width: 52px;
   height: 52px;
-  background: #fff7ed;
+  background: #fffbeb;
   border-radius: 14px;
   margin-bottom: 18px;
-  border: 1px solid #fed7aa;
+  border: 1px solid #fef08a;
 }
 
 .service-card__title {

@@ -5,7 +5,7 @@ const skillCategories = [
   {
     category: 'Programming Languages',
     icon: '🐍',
-    color: '#ea580c',
+    color: '#d97706',
     skills: [
       { name: 'Python', level: 'Advanced / Core' },
       { name: 'SQL', level: 'Intermediate / Queries' },
@@ -16,7 +16,7 @@ const skillCategories = [
   {
     category: 'AI-Enabled Systems & GenAI',
     icon: '🤖',
-    color: '#f97316',
+    color: '#f59e0b',
     skills: [
       { name: 'Generative AI & LLMs', level: 'Prompt & Integration' },
       { name: 'AI Agents & Workflows', level: 'Autonomous Pipelines' },
@@ -29,7 +29,7 @@ const skillCategories = [
   {
     category: 'Machine Learning & Data Science',
     icon: '🧠',
-    color: '#d97706',
+    color: '#eab308',
     skills: [
       { name: 'Machine Learning', level: 'Supervised & Unsupervised' },
       { name: 'Scikit-learn', level: 'Model Building' },
@@ -42,7 +42,7 @@ const skillCategories = [
   {
     category: 'Software & Backend Engineering',
     icon: '💻',
-    color: '#c2410c',
+    color: '#b45309',
     skills: [
       { name: 'FastAPI', level: 'High-Performance APIs' },
       { name: 'RESTful API Design', level: 'Endpoints & Auth' },
@@ -55,7 +55,7 @@ const skillCategories = [
   {
     category: 'Databases & Tools',
     icon: '🗄️',
-    color: '#f59e0b',
+    color: '#facc15',
     skills: [
       { name: 'PostgreSQL & MySQL', level: 'Relational DBs' },
       { name: 'Power BI', level: 'Interactive Dashboards' },
