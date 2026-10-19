@@ -307,12 +307,12 @@
   height: 430px;
   border-radius: 56% 44% 50% 50% / 48% 52% 48% 52%;
   overflow: hidden;
-  background: linear-gradient(135deg, #16a34a 0%, #0d9488 100%);
+  background: linear-gradient(135deg, #0b1120 0%, #1e293b 100%);
   animation: morph-blob 9s ease-in-out infinite alternate;
   box-shadow:
-    0 20px 60px rgba(22, 163, 74, 0.28),
-    0 8px 24px rgba(13, 148, 136, 0.18);
-  border: 3.5px solid rgba(255, 255, 255, 0.5);
+    0 25px 60px rgba(15, 23, 42, 0.25),
+    0 10px 25px rgba(22, 163, 74, 0.15);
+  border: 3.5px solid rgba(255, 255, 255, 0.6);
 }
 
 .hero__photo {
